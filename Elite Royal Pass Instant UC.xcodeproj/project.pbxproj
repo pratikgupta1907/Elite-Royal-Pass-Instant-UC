@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C104C1D246D89E20089B0DD /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104C1C246D89E20089B0DD /* SettingVC.swift */; };
+		5C104C1F246D951B0089B0DD /* settingCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104C1E246D951B0089B0DD /* settingCellTableViewCell.swift */; };
+		5C104C21246DCFE90089B0DD /* CardsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104C20246DCFE90089B0DD /* CardsEngine.swift */; };
+		5C153FF32468379A00F4522D /* mainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C153FF12468379A00F4522D /* mainCell.swift */; };
+		5C153FF42468379A00F4522D /* mainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C153FF22468379A00F4522D /* mainCell.xib */; };
+		5C2C3C55247E583A00B5BE18 /* FollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C3C53247E583A00B5BE18 /* FollowCell.swift */; };
+		5C2C3C56247E583A00B5BE18 /* FollowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C2C3C54247E583A00B5BE18 /* FollowCell.xib */; };
+		5C481CAF2466F82E00A79202 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C481CAE2466F82E00A79202 /* AppDelegate.swift */; };
+		5C481CB32466F82E00A79202 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C481CB22466F82E00A79202 /* ViewController.swift */; };
+		5C481CB62466F82E00A79202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C481CB42466F82E00A79202 /* Main.storyboard */; };
+		5C481CB82466F83000A79202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C481CB72466F83000A79202 /* Assets.xcassets */; };
+		5C481CBB2466F83000A79202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C481CB92466F83000A79202 /* LaunchScreen.storyboard */; };
+		5C481CC3246721DF00A79202 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C481CC2246721DF00A79202 /* Montserrat-Bold.ttf */; };
+		5C963B7824753F5600336141 /* privacy.html in Sources */ = {isa = PBXBuildFile; fileRef = 5C963B7724753F5600336141 /* privacy.html */; };
+		5C963B792475425400336141 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 5C963B7724753F5600336141 /* privacy.html */; };
+		5C963B7B24757B1A00336141 /* Ads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C963B7A24757B1A00336141 /* Ads.swift */; };
+		5CC7736C2469AAFC00F39467 /* InviteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7736B2469AAFC00F39467 /* InviteVC.swift */; };
+		5CC7736E246A97D300F39467 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CC7736D246A97D300F39467 /* GoogleService-Info.plist */; };
+		5CC77370246A9FA800F39467 /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7736F246A9FA800F39467 /* GoogleLogin.swift */; };
+		5CC77375246B086800F39467 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC77372246B086800F39467 /* Api.swift */; };
+		5CC77376246B086800F39467 /* myAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC77373246B086800F39467 /* myAlert.swift */; };
+		5CC77377246B086800F39467 /* UserDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC77374246B086800F39467 /* UserDef.swift */; };
+		5CD141522472E2200074FA3B /* LuckyEnvelopeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD141512472E2200074FA3B /* LuckyEnvelopeVC.swift */; };
+		5CD14155247429AA0074FA3B /* RedeemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD14154247429AA0074FA3B /* RedeemVC.swift */; };
+		5CD1415724742BB10074FA3B /* RedeemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1415624742BB10074FA3B /* RedeemCell.swift */; };
+		5CDC1D5624701FAA0028B778 /* CardsEngineTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC1D5524701FAA0028B778 /* CardsEngineTwo.swift */; };
+		886177AAAB060F10E9FD06DE /* Pods_Elite_Royal_Pass_Instant_UC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2958A85A055002CF21519007 /* Pods_Elite_Royal_Pass_Instant_UC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2958A85A055002CF21519007 /* Pods_Elite_Royal_Pass_Instant_UC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elite_Royal_Pass_Instant_UC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C104C1C246D89E20089B0DD /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		5C104C1E246D951B0089B0DD /* settingCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCellTableViewCell.swift; sourceTree = "<group>"; };
+		5C104C20246DCFE90089B0DD /* CardsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsEngine.swift; sourceTree = "<group>"; };
+		5C153FF12468379A00F4522D /* mainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainCell.swift; sourceTree = "<group>"; };
+		5C153FF22468379A00F4522D /* mainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainCell.xib; sourceTree = "<group>"; };
+		5C2C3C53247E583A00B5BE18 /* FollowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowCell.swift; sourceTree = "<group>"; };
+		5C2C3C54247E583A00B5BE18 /* FollowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowCell.xib; sourceTree = "<group>"; };
+		5C481CAB2466F82E00A79202 /* Royal Pass UC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Royal Pass UC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C481CAE2466F82E00A79202 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C481CB22466F82E00A79202 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C481CB52466F82E00A79202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C481CB72466F83000A79202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C481CBA2466F83000A79202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C481CBC2466F83000A79202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C481CC2246721DF00A79202 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		5C963B7724753F5600336141 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		5C963B7A24757B1A00336141 /* Ads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ads.swift; sourceTree = "<group>"; };
+		5CB193202479969F00C3DA47 /* Royal Pass UC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Royal Pass UC.entitlements"; sourceTree = "<group>"; };
+		5CC7736B2469AAFC00F39467 /* InviteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteVC.swift; sourceTree = "<group>"; };
+		5CC7736D246A97D300F39467 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5CC7736F246A9FA800F39467 /* GoogleLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLogin.swift; sourceTree = "<group>"; };
+		5CC77372246B086800F39467 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		5CC77373246B086800F39467 /* myAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myAlert.swift; sourceTree = "<group>"; };
+		5CC77374246B086800F39467 /* UserDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDef.swift; sourceTree = "<group>"; };
+		5CD141512472E2200074FA3B /* LuckyEnvelopeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyEnvelopeVC.swift; sourceTree = "<group>"; };
+		5CD14154247429AA0074FA3B /* RedeemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemVC.swift; sourceTree = "<group>"; };
+		5CD1415624742BB10074FA3B /* RedeemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemCell.swift; sourceTree = "<group>"; };
+		5CDC1D5524701FAA0028B778 /* CardsEngineTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsEngineTwo.swift; sourceTree = "<group>"; };
+		A95639D2426D5832E9C1B476 /* Pods-Elite Royal Pass Instant UC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elite Royal Pass Instant UC.release.xcconfig"; path = "Target Support Files/Pods-Elite Royal Pass Instant UC/Pods-Elite Royal Pass Instant UC.release.xcconfig"; sourceTree = "<group>"; };
+		BAAF5764C71B6CDC3C7BCAA3 /* Pods-Elite Royal Pass Instant UC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elite Royal Pass Instant UC.debug.xcconfig"; path = "Target Support Files/Pods-Elite Royal Pass Instant UC/Pods-Elite Royal Pass Instant UC.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C481CA82466F82E00A79202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886177AAAB060F10E9FD06DE /* Pods_Elite_Royal_Pass_Instant_UC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A2A6ECFFF9D8DEFE6F6665 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAAF5764C71B6CDC3C7BCAA3 /* Pods-Elite Royal Pass Instant UC.debug.xcconfig */,
+				A95639D2426D5832E9C1B476 /* Pods-Elite Royal Pass Instant UC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C153FF02468377000F4522D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5C153FF12468379A00F4522D /* mainCell.swift */,
+				5C153FF22468379A00F4522D /* mainCell.xib */,
+				5C104C1E246D951B0089B0DD /* settingCellTableViewCell.swift */,
+				5CD1415624742BB10074FA3B /* RedeemCell.swift */,
+				5C2C3C53247E583A00B5BE18 /* FollowCell.swift */,
+				5C2C3C54247E583A00B5BE18 /* FollowCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5C481CA22466F82E00A79202 = {
+			isa = PBXGroup;
+			children = (
+				5C481CAD2466F82E00A79202 /* Elite Royal Pass Instant UC */,
+				5C481CAC2466F82E00A79202 /* Products */,
+				40A2A6ECFFF9D8DEFE6F6665 /* Pods */,
+				90712C7861A40B41868A9BA0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C481CAC2466F82E00A79202 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C481CAB2466F82E00A79202 /* Royal Pass UC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C481CAD2466F82E00A79202 /* Elite Royal Pass Instant UC */ = {
+			isa = PBXGroup;
+			children = (
+				5CB193202479969F00C3DA47 /* Royal Pass UC.entitlements */,
+				5CDC1D5424701F690028B778 /* VCs */,
+				5CC77371246B086800F39467 /* Model */,
+				5C153FF02468377000F4522D /* Cell */,
+				5C481CAE2466F82E00A79202 /* AppDelegate.swift */,
+				5CC7736D246A97D300F39467 /* GoogleService-Info.plist */,
+				5C481CB42466F82E00A79202 /* Main.storyboard */,
+				5C481CB72466F83000A79202 /* Assets.xcassets */,
+				5C481CB92466F83000A79202 /* LaunchScreen.storyboard */,
+				5C481CBC2466F83000A79202 /* Info.plist */,
+				5C481CC2246721DF00A79202 /* Montserrat-Bold.ttf */,
+				5C963B7724753F5600336141 /* privacy.html */,
+			);
+			path = "Elite Royal Pass Instant UC";
+			sourceTree = "<group>";
+		};
+		5CC77371246B086800F39467 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C963B7A24757B1A00336141 /* Ads.swift */,
+				5CC77372246B086800F39467 /* Api.swift */,
+				5CC77373246B086800F39467 /* myAlert.swift */,
+				5CC77374246B086800F39467 /* UserDef.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CDC1D5424701F690028B778 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				5C481CB22466F82E00A79202 /* ViewController.swift */,
+				5CC7736B2469AAFC00F39467 /* InviteVC.swift */,
+				5C104C1C246D89E20089B0DD /* SettingVC.swift */,
+				5CC7736F246A9FA800F39467 /* GoogleLogin.swift */,
+				5CD14154247429AA0074FA3B /* RedeemVC.swift */,
+				5C104C20246DCFE90089B0DD /* CardsEngine.swift */,
+				5CDC1D5524701FAA0028B778 /* CardsEngineTwo.swift */,
+				5CD141512472E2200074FA3B /* LuckyEnvelopeVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		90712C7861A40B41868A9BA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2958A85A055002CF21519007 /* Pods_Elite_Royal_Pass_Instant_UC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C481CAA2466F82E00A79202 /* Elite Royal Pass Instant UC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C481CBF2466F83000A79202 /* Build configuration list for PBXNativeTarget "Elite Royal Pass Instant UC" */;
+			buildPhases = (
+				FBFB6E89AF5E1038B5C0376F /* [CP] Check Pods Manifest.lock */,
+				5C481CA72466F82E00A79202 /* Sources */,
+				5C481CA82466F82E00A79202 /* Frameworks */,
+				5C481CA92466F82E00A79202 /* Resources */,
+				284867E0FB0458807E07D253 /* [CP] Embed Pods Frameworks */,
+				C73AB078D652EB79A15F36AA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Elite Royal Pass Instant UC";
+			productName = "Elite Royal Pass Instant UC";
+			productReference = 5C481CAB2466F82E00A79202 /* Royal Pass UC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C481CA32466F82E00A79202 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Saif Mukadam";
+				TargetAttributes = {
+					5C481CAA2466F82E00A79202 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5C481CA62466F82E00A79202 /* Build configuration list for PBXProject "Elite Royal Pass Instant UC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C481CA22466F82E00A79202;
+			productRefGroup = 5C481CAC2466F82E00A79202 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C481CAA2466F82E00A79202 /* Elite Royal Pass Instant UC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C481CA92466F82E00A79202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C963B792475425400336141 /* privacy.html in Resources */,
+				5C153FF42468379A00F4522D /* mainCell.xib in Resources */,
+				5C2C3C56247E583A00B5BE18 /* FollowCell.xib in Resources */,
+				5C481CC3246721DF00A79202 /* Montserrat-Bold.ttf in Resources */,
+				5CC7736E246A97D300F39467 /* GoogleService-Info.plist in Resources */,
+				5C481CBB2466F83000A79202 /* LaunchScreen.storyboard in Resources */,
+				5C481CB82466F83000A79202 /* Assets.xcassets in Resources */,
+				5C481CB62466F82E00A79202 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		284867E0FB0458807E07D253 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elite Royal Pass Instant UC/Pods-Elite Royal Pass Instant UC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elite Royal Pass Instant UC/Pods-Elite Royal Pass Instant UC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elite Royal Pass Instant UC/Pods-Elite Royal Pass Instant UC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C73AB078D652EB79A15F36AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elite Royal Pass Instant UC/Pods-Elite Royal Pass Instant UC-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elite Royal Pass Instant UC/Pods-Elite Royal Pass Instant UC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elite Royal Pass Instant UC/Pods-Elite Royal Pass Instant UC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBFB6E89AF5E1038B5C0376F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elite Royal Pass Instant UC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C481CA72466F82E00A79202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD14155247429AA0074FA3B /* RedeemVC.swift in Sources */,
+				5C963B7B24757B1A00336141 /* Ads.swift in Sources */,
+				5CD141522472E2200074FA3B /* LuckyEnvelopeVC.swift in Sources */,
+				5CDC1D5624701FAA0028B778 /* CardsEngineTwo.swift in Sources */,
+				5CC77375246B086800F39467 /* Api.swift in Sources */,
+				5C104C1D246D89E20089B0DD /* SettingVC.swift in Sources */,
+				5C104C1F246D951B0089B0DD /* settingCellTableViewCell.swift in Sources */,
+				5C481CB32466F82E00A79202 /* ViewController.swift in Sources */,
+				5CC77370246A9FA800F39467 /* GoogleLogin.swift in Sources */,
+				5C963B7824753F5600336141 /* privacy.html in Sources */,
+				5CC7736C2469AAFC00F39467 /* InviteVC.swift in Sources */,
+				5CD1415724742BB10074FA3B /* RedeemCell.swift in Sources */,
+				5C153FF32468379A00F4522D /* mainCell.swift in Sources */,
+				5C104C21246DCFE90089B0DD /* CardsEngine.swift in Sources */,
+				5C481CAF2466F82E00A79202 /* AppDelegate.swift in Sources */,
+				5CC77377246B086800F39467 /* UserDef.swift in Sources */,
+				5C2C3C55247E583A00B5BE18 /* FollowCell.swift in Sources */,
+				5CC77376246B086800F39467 /* myAlert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C481CB42466F82E00A79202 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C481CB52466F82E00A79202 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C481CB92466F83000A79202 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C481CBA2466F83000A79202 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C481CBD2466F83000A79202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C481CBE2466F83000A79202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C481CC02466F83000A79202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAAF5764C71B6CDC3C7BCAA3 /* Pods-Elite Royal Pass Instant UC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Elite Royal Pass Instant UC/Royal Pass UC.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = 959YZPX78D;
+				INFOPLIST_FILE = "Elite Royal Pass Instant UC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Elite-Royal-Pass-Instant-UC";
+				PRODUCT_NAME = "Royal Pass UC";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5C481CC12466F83000A79202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A95639D2426D5832E9C1B476 /* Pods-Elite Royal Pass Instant UC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Elite Royal Pass Instant UC/Royal Pass UC.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = 959YZPX78D;
+				INFOPLIST_FILE = "Elite Royal Pass Instant UC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Elite-Royal-Pass-Instant-UC";
+				PRODUCT_NAME = "Royal Pass UC";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C481CA62466F82E00A79202 /* Build configuration list for PBXProject "Elite Royal Pass Instant UC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C481CBD2466F83000A79202 /* Debug */,
+				5C481CBE2466F83000A79202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C481CBF2466F83000A79202 /* Build configuration list for PBXNativeTarget "Elite Royal Pass Instant UC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C481CC02466F83000A79202 /* Debug */,
+				5C481CC12466F83000A79202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C481CA32466F82E00A79202 /* Project object */;
+}
