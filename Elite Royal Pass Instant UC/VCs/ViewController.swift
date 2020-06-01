@@ -16,6 +16,13 @@ class ViewController: UIViewController{
     var indexPath = 0
     var Ad_Token = "0"
     
+    var Gtitel = ""
+    var message = ""
+    var but1 = ""
+    var but2 = ""
+    var link = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -125,6 +132,12 @@ class ViewController: UIViewController{
             UserDefaults.standard.setUserUserProfilePic(value: json["Profile"].string ?? "null")
             UserDefaults.standard.setReferralCode(value: json["RfCode"].string ?? "null")
             self.Ad_Token = json["Ad_Token"].string ?? "0"
+            
+            self.Gtitel = json["title"].string ?? "Giveaway"
+            self.message = json["message"].string ?? "Follow us on Instagram to participate in Giveaway"
+            self.but1 = json["but1"].string ?? "Follow"
+            self.but2 = json["but2"].string ?? "Cancel"
+            self.link = json["link"].string ?? "https://www.instagram.com/royal_pass_instant/"
         }
         
         myView.delegate = self
@@ -204,15 +217,15 @@ class ViewController: UIViewController{
     }
     
     @objc func winroyalPassCliked(){
-        let alert2 = UIAlertController(title: "Giveaway #1", message: "Follow us on Instagram to participate in Giveaway", preferredStyle: .alert)
-        alert2.addAction(UIAlertAction(title: "Follow", style: .default, handler: { action in
+        let alert2 = UIAlertController(title: Gtitel, message: message, preferredStyle: .alert)
+        alert2.addAction(UIAlertAction(title: but1, style: .default, handler: { action in
             switch action.style{
             case .default:
                 
                 if #available(iOS 10.0, *) {
-                    UIApplication.shared.open(URL(string: "https://www.instagram.com/royal_pass_instant/")!)
+                    UIApplication.shared.open(URL(string: self.link)!)
                 } else {
-                    UIApplication.shared.openURL(URL(string: "https://www.instagram.com/royal_pass_instant/")!)
+                    UIApplication.shared.openURL(URL(string: self.link)!)
                 }
                 
             case .cancel:
@@ -224,7 +237,7 @@ class ViewController: UIViewController{
             }
         }))
         
-        alert2.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+        alert2.addAction(UIAlertAction(title: but2, style: .default, handler: { (action) in
             switch action.style{
             case .default:
                 print("")
@@ -236,7 +249,6 @@ class ViewController: UIViewController{
                 fatalError()
             }
         }))
-        
         present(alert2, animated: true, completion: nil)
     }
     
