@@ -65,7 +65,7 @@ class SettingVC: UIViewController ,UITableViewDelegate,UITableViewDataSource,MFM
     
     let imageArray = [#imageLiteral(resourceName: "commerce"),#imageLiteral(resourceName: "love-and-romance.png"),#imageLiteral(resourceName: "interface"),#imageLiteral(resourceName: "signs.png"),#imageLiteral(resourceName: "document.png")]
     let nameArray = ["Redeem","Feedback","Bug / Problem","Rate Us","Privacy Policy"]
-    let myMail = "saifmukadam2110@gmail.com"
+    let myMail = "feedback@safeapps.online"
     @IBOutlet weak var myView: UITableView!
     @IBOutlet weak var profileVIew: UIView!
     @IBOutlet weak var name: UILabel!

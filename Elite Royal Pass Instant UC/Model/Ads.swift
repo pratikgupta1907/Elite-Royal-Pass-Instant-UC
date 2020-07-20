@@ -21,6 +21,8 @@ public var interstitial: GADInterstitial!
 func LoadIntrest() {
     interstitial = GADInterstitial(adUnitID: testIntrest)
     let request = GADRequest()
+    request.contentURL = "https://www.ontariocolleges.ca/en/programs/health-food-and-medical/fitness-health"
+    request.keywords = ["Health and Fitness","Loose Weight"]
     interstitial.load(request)
 }
 

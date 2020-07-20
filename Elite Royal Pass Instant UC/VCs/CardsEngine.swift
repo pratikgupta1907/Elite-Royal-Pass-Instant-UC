@@ -84,11 +84,11 @@ class CardsEngine: UIViewController,SRScratchViewDelegate{
         }
     }
     
+    
     @IBAction func walletTap(_ sender: Any) {
         addTowallet.isHidden = true
         navigationController?.navigationBar.tintColor = UIColor.systemOrange
         self.navigationItem.hidesBackButton = false
         ShowAd(selfo: self, showAdafterSecound: 0)
     }
-    
 }

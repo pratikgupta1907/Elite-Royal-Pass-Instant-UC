@@ -14,15 +14,16 @@ class FollowCell: UITableViewCell {
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var innerView: UIView!
     
+    @IBOutlet weak var des: UILabel!
+    @IBOutlet weak var line: UIView!
     
-    
+    @IBOutlet weak var button: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        line.backgroundColor = lineClr
         innerView.clipsToBounds = true
-        innerView.layer.cornerRadius = 10
-        innerView.layer.borderWidth = 1
-        innerView.layer.borderColor  = UIColor.systemOrange.cgColor
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

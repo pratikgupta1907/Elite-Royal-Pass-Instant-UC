@@ -1,10 +1,15 @@
 PODS:
+  - AdColony (4.1.4)
   - Alamofire (5.1.0)
   - AppAuth (1.3.0):
     - AppAuth/Core (= 1.3.0)
     - AppAuth/ExternalUserAgent (= 1.3.0)
   - AppAuth/Core (1.3.0)
   - AppAuth/ExternalUserAgent (1.3.0)
+  - AppLovinSDK (6.12.2)
+  - FBAudienceNetwork (5.8.0):
+    - FBSDKCoreKit/Basics (>= 5.6.0)
+  - FBSDKCoreKit/Basics (7.0.0)
   - Firebase/Analytics (6.23.0):
     - Firebase/Core
   - Firebase/Core (6.23.0):
@@ -50,6 +55,15 @@ PODS:
   - GoogleDataTransportCCTSupport (3.0.0):
     - GoogleDataTransport (~> 6.0)
     - nanopb (~> 0.3.901)
+  - GoogleMobileAdsMediationAdColony (4.1.4.1):
+    - AdColony (= 4.1.4)
+    - Google-Mobile-Ads-SDK (>= 7.57.0)
+  - GoogleMobileAdsMediationAppLovin (6.12.2.0):
+    - AppLovinSDK (= 6.12.2)
+    - Google-Mobile-Ads-SDK (>= 7.58.0)
+  - GoogleMobileAdsMediationFacebook (5.8.0.2):
+    - FBAudienceNetwork (= 5.8.0)
+    - Google-Mobile-Ads-SDK (>= 7.58.0)
   - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
     - GTMAppAuth (~> 1.0)
@@ -81,6 +95,12 @@ PODS:
   - GTMSessionFetcher/Core (1.4.0)
   - GTMSessionFetcher/Full (1.4.0):
     - GTMSessionFetcher/Core (= 1.4.0)
+  - ImageSlideshow (1.9.1):
+    - ImageSlideshow/Core (= 1.9.1)
+  - ImageSlideshow/Core (1.9.1)
+  - ImageSlideshow/Kingfisher (1.9.1):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
   - Kingfisher (5.13.4):
     - Kingfisher/Core (= 5.13.4)
   - Kingfisher/Core (5.13.4)
@@ -90,6 +110,7 @@ PODS:
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.8)
+  - Siren (5.4.4)
   - SRScratchView (0.1.1)
   - SwiftyJSON (4.3.0)
 
@@ -97,15 +118,25 @@ DEPENDENCIES:
   - Alamofire (~> 5.1)
   - Firebase/Analytics
   - Google-Mobile-Ads-SDK
+  - GoogleMobileAdsMediationAdColony
+  - GoogleMobileAdsMediationAppLovin
+  - GoogleMobileAdsMediationFacebook
   - GoogleSignIn
+  - ImageSlideshow (~> 1.9)
+  - ImageSlideshow/Kingfisher
   - Kingfisher
+  - Siren (~> 5.4)
   - SRScratchView
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - AdColony
     - Alamofire
     - AppAuth
+    - AppLovinSDK
+    - FBAudienceNetwork
+    - FBSDKCoreKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -116,19 +147,28 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
+    - GoogleMobileAdsMediationAdColony
+    - GoogleMobileAdsMediationAppLovin
+    - GoogleMobileAdsMediationFacebook
     - GoogleSignIn
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - ImageSlideshow
     - Kingfisher
     - nanopb
     - PromisesObjC
+    - Siren
     - SRScratchView
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  AdColony: fc02f429d6c4591567c7ae1426ebfcecb704b11f
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
+  AppLovinSDK: 921463134d97f9ced16ffb0586e9b332e769b0a9
+  FBAudienceNetwork: 98c125767300048ad46c756680644f4ecb7c4040
+  FBSDKCoreKit: 8ad31cd09f793d1d7e84cf20fd6cebfe80ad318d
   Firebase: 585ae467b3edda6a5444e788fda6888f024d8d6f
   FirebaseAnalytics: 558f7a03d19de451093032c806f39d5f9dff096e
   FirebaseCore: a2788a0d5f6c1dff17b8f79b4a73654a8d4bfdbd
@@ -139,16 +179,21 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 2253e99c1f22638cf234c059144660c338ad76c3
   GoogleDataTransport: 061fe7d9b476710e3cd8ea51e8e07d8b67c2b420
   GoogleDataTransportCCTSupport: 0f39025e8cf51f168711bd3fb773938d7e62ddb5
+  GoogleMobileAdsMediationAdColony: 71fa4d6008d3269fe6854582ce85d4934b977317
+  GoogleMobileAdsMediationAppLovin: 749d4613ffb07b0710c0f422599df3fde9e54a9a
+  GoogleMobileAdsMediationFacebook: 2a6c4e42acdcf342e8a7c39bc796cab088fdefe0
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  ImageSlideshow: 67184be896a28472bd3b906c33ce4e0734aa3d22
   Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  Siren: 43ebf58c6593ed947a951ab6a03bdc413ffa371a
   SRScratchView: 1188ee5f7fb31eea0c2b4a8a191bfd1397ae18c8
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 0268ab19a53bca3bf2b4a887799ffec776698fdf
+PODFILE CHECKSUM: 4aec250ca0e5f5f8d1cc95238ee663cd2699e83c
 
 COCOAPODS: 1.8.4

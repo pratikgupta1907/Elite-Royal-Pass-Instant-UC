@@ -113,10 +113,10 @@ class RedeemVC: UIViewController,UITableViewDataSource,UITableViewDelegate,UITex
     
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.tintColor = UIColor.systemOrange
         navigationController?.isNavigationBarHidden = false
     }
     
+    //https://safeapps.online/RoyalPass/redeemtionValue.php
     override func viewDidLoad() {
         super.viewDidLoad()
         

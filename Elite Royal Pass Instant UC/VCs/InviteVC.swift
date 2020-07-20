@@ -10,9 +10,11 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import GoogleMobileAds
+import AdSupport
 
 class InviteVC: UIViewController,GADRewardedAdDelegate{
-    @IBOutlet weak var ban: GADBannerView!
+    @IBOutlet weak var notice: UILabel!
+    @IBOutlet weak var Banner: GADBannerView!
     
     
     var rewardedAd: GADRewardedAd?
@@ -24,31 +26,46 @@ class InviteVC: UIViewController,GADRewardedAdDelegate{
             "WhatYouWant":"Ad_Token_Remove"
         ]
         postWithParameter(Url: "GetCoinInfo.php", parameters: Parameters) { (json, err) in
+            let message = json["message"].string ?? "Token Added"
             
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                self.present(myAlt(titel:"Alert",message: message), animated: true, completion: nil)
+            })
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-            self.present(myAlt(titel:"AdToken Added",message:"One Token added in your account."), animated: true, completion: nil)
-        })
-        
-        self.rewardedAd = self.createAndLoadRewardedAd()
     }
+    
     
     func rewardedAd(_ rewardedAd: GADRewardedAd, didFailToPresentWithError error: Error) {
-         self.alert.dismiss(animated: true, completion: nil)
+        self.alert.dismiss(animated: true, completion: nil)
+        print("Open Article FailToPresentWithError",error)
     }
     
-    
-    func rewardedAdDidDismiss(_ rewardedAd: GADRewardedAd) {
-        self.rewardedAd = createAndLoadRewardedAd()
+    @IBAction func readArticles(_ sender: Any) {
+        let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = MainStoryboard.instantiateViewController(withIdentifier: "ArticlesVC") as! ArticlesVC
+        navigationController?.pushViewController(newViewController, animated: true)
     }
+    
     
     
     func createAndLoadRewardedAd() -> GADRewardedAd {
-        
-        rewardedAd = GADRewardedAd(adUnitID: videoads) //ca-app-pub-2710347124980493/6344386342 //ca-app-pub-3940256099942544/5224354917
-        rewardedAd?.load(GADRequest()) { error in
+        rewardedAd = GADRewardedAd(adUnitID: videoads)
+        let request = GADRequest()
+        rewardedAd?.load(request) { error in
             self.alert.dismiss(animated: true, completion: nil)
+            if error != nil {
+                print(error!)
+                let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = MainStoryboard.instantiateViewController(withIdentifier: "ArticlesVC") as! ArticlesVC
+                self.navigationController?.pushViewController(newViewController, animated: true)
+            }else{
+                self.alert.dismiss(animated: false) {
+                    if self.rewardedAd?.isReady == true {
+                        self.rewardedAd?.present(fromRootViewController: self, delegate:self)
+                    }
+                }
+            }
         }
         return rewardedAd!
     }
@@ -58,34 +75,41 @@ class InviteVC: UIViewController,GADRewardedAdDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         statusConstraints()
-        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
-        loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.style = UIActivityIndicatorView.Style.medium
-        loadingIndicator.startAnimating();
+        Banner.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(self.view.frame.size.width)
+        Banner.adUnitID = "ca-app-pub-2710347124980493/2253995881"
+        Banner.rootViewController = self
+        Banner.load(GADRequest())
         
-        alert.view.addSubview(loadingIndicator)
-        present(alert, animated: true, completion: nil)
-        self.rewardedAd = createAndLoadRewardedAd()
-        
-        ban.adUnitID = "ca-app-pub-2710347124980493/2253995881"
-        ban.rootViewController = self
-        ban.load(GADRequest())
     }
     
     @IBAction func watchAD(_ sender: Any) {
-        if rewardedAd?.isReady == true {
-            rewardedAd?.present(fromRootViewController: self, delegate:self)
-        }
         
+        let adIdentManager = ASIdentifierManager.shared()
+        if adIdentManager.isAdvertisingTrackingEnabled {
+            let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+            loadingIndicator.hidesWhenStopped = true
+            loadingIndicator.style = UIActivityIndicatorView.Style.medium
+            loadingIndicator.startAnimating();
+            
+            alert.view.addSubview(loadingIndicator)
+            present(alert, animated: true, completion: nil)
+            self.rewardedAd = createAndLoadRewardedAd()
+            
+        } else {
+            self.present(myAlt(titel:"Error - 190",message:"Somthing went worng.To use this app properly please contact developer from Setting - Feedback & write about this Error."), animated: true, completion: nil)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+        
         let Parameters:Parameters = [
             "id": UserDefaults.standard.getid(),
             "WhatYouWant":"CoinsJSON"
         ]
         postWithParameter(Url: "GetCoinInfo.php", parameters: Parameters) { (json, err) in
             
+            self.notice.text = json["Notice"].string ?? "false"
             self.statusUCcoins.text = json["Ad_Token"].string ?? ""
             
         }
@@ -140,6 +164,7 @@ class InviteVC: UIViewController,GADRewardedAdDelegate{
             statusUCcoins.bottomAnchor.constraint(equalTo: statusCoinView.bottomAnchor),
         ])
     }
+    
     lazy var statusView:UIView = {
         let vw = UIView()
         return vw
@@ -166,7 +191,6 @@ class InviteVC: UIViewController,GADRewardedAdDelegate{
     lazy var statustitel:UILabel = {
         let vw = UILabel()
         let St = NSMutableAttributedString(string:"Watch & Earn Ad Tokens 📺")
-        
         vw.attributedText = St
         vw.font =  UIFont (name: "Montserrat-Bold", size: 17)
         return vw

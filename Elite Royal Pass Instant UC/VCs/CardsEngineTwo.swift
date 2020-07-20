@@ -108,7 +108,7 @@ class CardsEngineTwo: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         postWithParameter(Url: "TasksEngine.php", parameters: pm) { (JSON, Error) in
             
             if JSON["code"].string != "002" {
-                let floatinString =  String(JSON["reward"].float ?? 0.00)
+                let floatinString =  String(JSON["reward"].float ?? 0.01)
                 let Myarray = Array(floatinString)
                 print(Myarray)
                 

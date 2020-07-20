@@ -12,8 +12,11 @@
 		5C104C21246DCFE90089B0DD /* CardsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C104C20246DCFE90089B0DD /* CardsEngine.swift */; };
 		5C153FF32468379A00F4522D /* mainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C153FF12468379A00F4522D /* mainCell.swift */; };
 		5C153FF42468379A00F4522D /* mainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C153FF22468379A00F4522D /* mainCell.xib */; };
+		5C198E4224B09AA90025F1BF /* ArticlesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C198E4124B09AA90025F1BF /* ArticlesVC.swift */; };
+		5C198E4424B0A44E0025F1BF /* article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C198E4324B0A44E0025F1BF /* article.swift */; };
 		5C2C3C55247E583A00B5BE18 /* FollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C3C53247E583A00B5BE18 /* FollowCell.swift */; };
 		5C2C3C56247E583A00B5BE18 /* FollowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C2C3C54247E583A00B5BE18 /* FollowCell.xib */; };
+		5C3C852524B3160500051AD9 /* VersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C852424B3160500051AD9 /* VersionCheck.swift */; };
 		5C481CAF2466F82E00A79202 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C481CAE2466F82E00A79202 /* AppDelegate.swift */; };
 		5C481CB32466F82E00A79202 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C481CB22466F82E00A79202 /* ViewController.swift */; };
 		5C481CB62466F82E00A79202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C481CB42466F82E00A79202 /* Main.storyboard */; };
@@ -23,6 +26,7 @@
 		5C963B7824753F5600336141 /* privacy.html in Sources */ = {isa = PBXBuildFile; fileRef = 5C963B7724753F5600336141 /* privacy.html */; };
 		5C963B792475425400336141 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 5C963B7724753F5600336141 /* privacy.html */; };
 		5C963B7B24757B1A00336141 /* Ads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C963B7A24757B1A00336141 /* Ads.swift */; };
+		5CA2DB4624BF2E6A00FC7EBB /* American Typewriter Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CA2DB4524BF2E6A00FC7EBB /* American Typewriter Regular.ttf */; };
 		5CC7736C2469AAFC00F39467 /* InviteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7736B2469AAFC00F39467 /* InviteVC.swift */; };
 		5CC7736E246A97D300F39467 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CC7736D246A97D300F39467 /* GoogleService-Info.plist */; };
 		5CC77370246A9FA800F39467 /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC7736F246A9FA800F39467 /* GoogleLogin.swift */; };
@@ -43,8 +47,11 @@
 		5C104C20246DCFE90089B0DD /* CardsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsEngine.swift; sourceTree = "<group>"; };
 		5C153FF12468379A00F4522D /* mainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainCell.swift; sourceTree = "<group>"; };
 		5C153FF22468379A00F4522D /* mainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainCell.xib; sourceTree = "<group>"; };
+		5C198E4124B09AA90025F1BF /* ArticlesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesVC.swift; sourceTree = "<group>"; };
+		5C198E4324B0A44E0025F1BF /* article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = article.swift; sourceTree = "<group>"; };
 		5C2C3C53247E583A00B5BE18 /* FollowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowCell.swift; sourceTree = "<group>"; };
 		5C2C3C54247E583A00B5BE18 /* FollowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowCell.xib; sourceTree = "<group>"; };
+		5C3C852424B3160500051AD9 /* VersionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCheck.swift; sourceTree = "<group>"; };
 		5C481CAB2466F82E00A79202 /* Royal Pass UC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Royal Pass UC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C481CAE2466F82E00A79202 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C481CB22466F82E00A79202 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +60,10 @@
 		5C481CBA2466F83000A79202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C481CBC2466F83000A79202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C481CC2246721DF00A79202 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		5C843DEE24B641660055E4BF /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		5C963B7724753F5600336141 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		5C963B7A24757B1A00336141 /* Ads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ads.swift; sourceTree = "<group>"; };
+		5CA2DB4524BF2E6A00FC7EBB /* American Typewriter Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "American Typewriter Regular.ttf"; sourceTree = "<group>"; };
 		5CB193202479969F00C3DA47 /* Royal Pass UC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Royal Pass UC.entitlements"; sourceTree = "<group>"; };
 		5CC7736B2469AAFC00F39467 /* InviteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteVC.swift; sourceTree = "<group>"; };
 		5CC7736D246A97D300F39467 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -100,6 +109,7 @@
 				5CD1415624742BB10074FA3B /* RedeemCell.swift */,
 				5C2C3C53247E583A00B5BE18 /* FollowCell.swift */,
 				5C2C3C54247E583A00B5BE18 /* FollowCell.xib */,
+				5C198E4324B0A44E0025F1BF /* article.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -130,11 +140,13 @@
 				5CC77371246B086800F39467 /* Model */,
 				5C153FF02468377000F4522D /* Cell */,
 				5C481CAE2466F82E00A79202 /* AppDelegate.swift */,
+				5C843DEE24B641660055E4BF /* Header.h */,
 				5CC7736D246A97D300F39467 /* GoogleService-Info.plist */,
 				5C481CB42466F82E00A79202 /* Main.storyboard */,
 				5C481CB72466F83000A79202 /* Assets.xcassets */,
 				5C481CB92466F83000A79202 /* LaunchScreen.storyboard */,
 				5C481CBC2466F83000A79202 /* Info.plist */,
+				5CA2DB4524BF2E6A00FC7EBB /* American Typewriter Regular.ttf */,
 				5C481CC2246721DF00A79202 /* Montserrat-Bold.ttf */,
 				5C963B7724753F5600336141 /* privacy.html */,
 			);
@@ -148,6 +160,7 @@
 				5CC77372246B086800F39467 /* Api.swift */,
 				5CC77373246B086800F39467 /* myAlert.swift */,
 				5CC77374246B086800F39467 /* UserDef.swift */,
+				5C3C852424B3160500051AD9 /* VersionCheck.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 				5C104C20246DCFE90089B0DD /* CardsEngine.swift */,
 				5CDC1D5524701FAA0028B778 /* CardsEngineTwo.swift */,
 				5CD141512472E2200074FA3B /* LuckyEnvelopeVC.swift */,
+				5C198E4124B09AA90025F1BF /* ArticlesVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -244,6 +258,7 @@
 				5C481CBB2466F83000A79202 /* LaunchScreen.storyboard in Resources */,
 				5C481CB82466F83000A79202 /* Assets.xcassets in Resources */,
 				5C481CB62466F82E00A79202 /* Main.storyboard in Resources */,
+				5CA2DB4624BF2E6A00FC7EBB /* American Typewriter Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CD14155247429AA0074FA3B /* RedeemVC.swift in Sources */,
+				5C3C852524B3160500051AD9 /* VersionCheck.swift in Sources */,
 				5C963B7B24757B1A00336141 /* Ads.swift in Sources */,
 				5CD141522472E2200074FA3B /* LuckyEnvelopeVC.swift in Sources */,
 				5CDC1D5624701FAA0028B778 /* CardsEngineTwo.swift in Sources */,
@@ -324,10 +340,12 @@
 				5CC77370246A9FA800F39467 /* GoogleLogin.swift in Sources */,
 				5C963B7824753F5600336141 /* privacy.html in Sources */,
 				5CC7736C2469AAFC00F39467 /* InviteVC.swift in Sources */,
+				5C198E4224B09AA90025F1BF /* ArticlesVC.swift in Sources */,
 				5CD1415724742BB10074FA3B /* RedeemCell.swift in Sources */,
 				5C153FF32468379A00F4522D /* mainCell.swift in Sources */,
 				5C104C21246DCFE90089B0DD /* CardsEngine.swift in Sources */,
 				5C481CAF2466F82E00A79202 /* AppDelegate.swift in Sources */,
+				5C198E4424B0A44E0025F1BF /* article.swift in Sources */,
 				5CC77377246B086800F39467 /* UserDef.swift in Sources */,
 				5C2C3C55247E583A00B5BE18 /* FollowCell.swift in Sources */,
 				5CC77376246B086800F39467 /* myAlert.swift in Sources */,
@@ -390,6 +408,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -451,6 +470,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -480,7 +500,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Elite Royal Pass Instant UC/Royal Pass UC.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "Elite Royal Pass Instant UC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -488,10 +508,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Elite-Royal-Pass-Instant-UC";
 				PRODUCT_NAME = "Royal Pass UC";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/junaidmukadam/Desktop/My Apps/Elite Royal Pass Instant UC/Elite Royal Pass Instant UC/Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -505,7 +526,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Elite Royal Pass Instant UC/Royal Pass UC.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "Elite Royal Pass Instant UC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -513,10 +534,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Elite-Royal-Pass-Instant-UC";
 				PRODUCT_NAME = "Royal Pass UC";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/junaidmukadam/Desktop/My Apps/Elite Royal Pass Instant UC/Elite Royal Pass Instant UC/Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

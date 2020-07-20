@@ -12,6 +12,9 @@ import GoogleSignIn
 import SwiftyJSON
 import Alamofire
 import GoogleMobileAds
+import AppLovinSDK
+import Siren
+import AdColony
 
 @UIApplicationMain
 
@@ -54,6 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         } else {
             print("\(error.localizedDescription)")
         }
+        
     }
     
     
@@ -72,9 +76,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         LoadIntrest()
+        
+        ALSdk.initializeSdk()
+        
+        AdColony.configure(withAppID: "app5f7f3980d2224d8095", zoneIDs: ["vzc6286ae7bdc84439a8"], options: nil) { [weak self] (zones) in
+            // configured
+        }
+        
+        
+        let siren = Siren.shared
+        let rules = Rules(promptFrequency: .immediately, forAlertType: .force)
+        siren.rulesManager = RulesManager(globalRules: rules)
+        siren.wail()
+
+        
         return true
     }
-    
-
-    
 }
